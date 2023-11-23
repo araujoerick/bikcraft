@@ -1,0 +1,58 @@
+:root {
+  --c12: #000000;
+  --c11: #111111;
+  --c10: #2e2e2e;
+  --c9: #404040;
+  --c8: #595959;
+  --c7: #717171;
+  --c6: #9c9c9c;
+  --c5: #b2b2b2;
+  --c4: #cccccc;
+  --c3: #dedede;
+  --c2: #ededed;
+  --c1: #f7f7f7;
+  --w: #ffffff;
+  --p5: #332200;
+  --p4: #664400;
+  --p3: #a66f00;
+  --p2: #e4a30b;
+  --p1: #ffbb00;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid-template {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px 140px;
+  /* align-items: center; */
+}
