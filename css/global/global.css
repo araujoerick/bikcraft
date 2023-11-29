@@ -1,26 +1,6 @@
-:root {
-  --c12: #000000;
-  --c11: #111111;
-  --c10: #2e2e2e;
-  --c9: #404040;
-  --c8: #595959;
-  --c7: #717171;
-  --c6: #9c9c9c;
-  --c5: #b2b2b2;
-  --c4: #cccccc;
-  --c3: #dedede;
-  --c2: #ededed;
-  --c1: #f7f7f7;
-  --w: #ffffff;
-  --p5: #332200;
-  --p4: #664400;
-  --p3: #a66f00;
-  --p2: #e4a30b;
-  --p1: #ffbb00;
-}
-
 body {
   margin: 0px;
+  color: var(--cor-11);
   padding-bottom: 600px;
 }
 
@@ -56,8 +36,4 @@ img {
   grid-template-columns: 1fr 2fr;
   gap: 20px 140px;
   /* align-items: center; */
-}
-
-.p1 {
-  color: #ffbb00;
 }
