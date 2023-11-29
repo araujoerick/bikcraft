@@ -20,8 +20,8 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   margin: 0px;
+  padding-bottom: 600px;
 }
 
 h1,
@@ -33,6 +33,7 @@ p {
 
 a {
   text-decoration: none;
+  color: inherit; /* Herdar */
 }
 
 ul {
@@ -55,4 +56,8 @@ img {
   grid-template-columns: 1fr 2fr;
   gap: 20px 140px;
   /* align-items: center; */
+}
+
+.p1 {
+  color: #ffbb00;
 }

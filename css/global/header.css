@@ -28,6 +28,8 @@
   font-size: 1.125rem;
   line-height: 1.33;
   position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 /* Esse elemento tem um tamanho total de 6px fazendo com que o menu não se alinhecom a brand.

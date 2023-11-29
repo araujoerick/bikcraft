@@ -1,0 +1,82 @@
+.introducao-bg {
+  background: var(--c12);
+  color: var(--w);
+  /* Efeito de imagem vazando com box-shadow. A img ta height 100% do container, 
+  então ela vai crecer no container + a box-shadow */
+  box-shadow: inset 0 -120px var(--w);
+}
+
+.introducao {
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+}
+
+.introducao img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.introducao h1 {
+  font-size: 4rem;
+  line-height: 1.125;
+  margin-bottom: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.introducao p {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--c5);
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.introducao-conteudo {
+  align-self: flex-end;
+  /* O padding era de 80, mas é preciso compensar o -120px do vazamento da image */
+  padding-bottom: 200px;
+}
+
+@media (max-width: 1200px) {
+  .introducao h1 {
+    font-size: 48px;
+  }
+  .introducao p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao-bg {
+    background: var(--c11);
+    padding-top: 40px;
+    box-shadow: inset 0 -60px var(--w);
+  }
+
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .introducao-conteudo {
+    padding-bottom: 0;
+  }
+
+  .introducao h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .introducao img {
+    height: 300px;
+    width: 100%;
+  }
+}
