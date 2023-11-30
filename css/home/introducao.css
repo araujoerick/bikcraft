@@ -6,14 +6,9 @@
 }
 
 .introducao {
-  max-width: 1200px;
-  padding: 0 20px;
-  box-sizing: border-box;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 40px;
-  color: var(--cor-11);
 }
 
 .introducao img {
@@ -36,15 +31,6 @@
   padding-bottom: 200px;
 }
 
-@media (max-width: 1200px) {
-  .introducao h1 {
-    font-size: 48px;
-  }
-  .introducao p {
-    font-size: 18px;
-  }
-}
-
 @media (max-width: 800px) {
   .introducao-bg {
     background: var(--cor-11);
@@ -62,7 +48,6 @@
   }
 
   .introducao h1 {
-    font-size: 32px;
     margin-bottom: 16px;
   }
 

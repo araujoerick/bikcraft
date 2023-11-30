@@ -7,6 +7,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0px;
 }
@@ -28,12 +29,8 @@ img {
   display: block;
 }
 
-.grid-template {
-  max-width: 1200px;
-  padding: 40px 20px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px 140px;
-  /* align-items: center; */
+/* Como todas as imagens do site vão ter um border radius... */
+/* Selecionando apenas as tags img com extensão jpg para evitar os svgs. */
+img[src$=".jpg"] {
+  border-radius: 4px;
 }

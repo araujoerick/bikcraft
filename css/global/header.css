@@ -3,15 +3,14 @@
 }
 
 .header {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-menu {
@@ -24,11 +23,7 @@
   padding: 16px 0px;
   /* <a> é inline, ao descer devido o wrap o padding não funciona direito. Solução: */
   display: inline-block;
-  font-size: 1.125rem;
-  line-height: 1.33;
   position: relative;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
 }
 
 /* Esse elemento tem um tamanho total de 6px fazendo com que o menu não se alinhecom a brand.
