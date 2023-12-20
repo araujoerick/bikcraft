@@ -26,7 +26,7 @@
   position: relative;
 }
 
-/* Esse elemento tem um tamanho total de 6px fazendo com que o menu não se alinhecom a brand.
+/* Esse elemento tem um tamanho total de 6px fazendo com que o menu não se alinhe com a brand.
 Solução: Tirar o elemento do fluxo com o position: absolute */
 .header-menu a::after {
   content: "";
@@ -39,7 +39,9 @@ Solução: Tirar o elemento do fluxo com o position: absolute */
   position: absolute;
 }
 
-.header-menu a:hover:after {
+/* Adiciona a classe ativo para que tenha sempre 100% quando ativo*/
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
   width: 100%;
 }
 
