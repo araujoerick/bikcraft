@@ -75,3 +75,28 @@ function eventosPerguntas(pergunta) {
 }
 
 perguntas.forEach(eventosPerguntas);
+
+// Galeria de Bicicletas
+
+const galeria = document.querySelectorAll(".bicicleta-imagens img");
+const galeriaContainer = document.querySelector(".bicicleta-imagens");
+
+// Para adicionar um elemento HTML no inicio utilizamos o método prepend
+// Ele remove o elemnto de onde ele estava e coloca na frente dos demais
+function trocarImagem(event) {
+  const img = event.currentTarget;
+  // A troca de imagem perde o sentido quando a tela é redimensionada
+  // Então fazermos uma verificação mediaQuerie no JS
+  // matchMedia("(min-width: 1000px)") retorna um objeto específico
+  // mas nós só precisamos do atributo match = true ou false, então .match no final
+  const media = matchMedia("(min-width: 940px)").matches;
+  if (media) {
+    galeriaContainer.prepend(img);
+  }
+}
+
+function eventosGaleria(img) {
+  img.addEventListener("click", trocarImagem);
+}
+
+galeria.forEach(eventosGaleria);
