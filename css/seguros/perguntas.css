@@ -50,11 +50,12 @@
   transform: rotate(180deg);
 }
 
-.perguntas dd {
+/* Só ocorre caso tenha a classe js, ou seja, caso o JS carregue no site */
+.js .perguntas dd {
   display: none;
 }
 
-.perguntas dd.ativa {
+.js .perguntas dd.ativa {
   display: block;
 }
 
